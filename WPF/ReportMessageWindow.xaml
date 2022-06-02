@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF.ReportMessageWindow" ResizeMode="NoResize" WindowStyle="None"  Background="#2b2a2a" WindowStartupLocation="CenterOwner"  BorderBrush="#a38407" BorderThickness="3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="ReportMessageWindow" Height="400" Width="600">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="37" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#e8e8e8" FontFamily="Consolas" x:Name="ReportMessageTextBlock">
+            
+        </TextBlock>
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                
+            </Grid.RowDefinitions>
+            <Button  Grid.Column="3" Grid.Row="3" Background="#c49f08" Foreground="#e8e8e8" FontFamily="Consolas" FontWeight="Bold" FontSize="31" Click="Button_Click"  VerticalAlignment="Center">
+                Вернуться к игре
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
